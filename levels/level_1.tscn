@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8cjvs6vcw3te"]
+
+[ext_resource type="PackedScene" uid="uid://bygc7gu7738cn" path="res://prototypes/tile.tscn" id="1_hgrye"]
+[ext_resource type="PackedScene" uid="uid://c52gcn3ntwj5e" path="res://prototypes/block.tscn" id="2_kuxqu"]
+[ext_resource type="PackedScene" uid="uid://ckdoihwohcrl7" path="res://prototypes/wall.tscn" id="3_lexcy"]
+
+[node name="Level1" type="Node3D"]
+
+[node name="Tile" parent="." instance=ExtResource("1_hgrye")]
+
+[node name="Tile2" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Tile3" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Tile4" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="Tile5" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="Tile6" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="Tile7" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="Tile8" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Tile9" parent="." instance=ExtResource("1_hgrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+
+[node name="Block" parent="." instance=ExtResource("2_kuxqu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -1)
+
+[node name="Wall" parent="." instance=ExtResource("3_lexcy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.5, 2.5, 2)
+
+[node name="Wall2" parent="." instance=ExtResource("3_lexcy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.5, 2.5, 0)
+
+[node name="Wall3" parent="." instance=ExtResource("3_lexcy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.5, 2.5, -2)
